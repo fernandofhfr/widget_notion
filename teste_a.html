@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body id="bodyTag">
+  <div style="position: relative;" id="embedContainer">
+  <div style="position: absolute; top: 0; right: 0; z-index: 100;">      <a target="_blank" class="apption-label" href="/?src=apption_label">
+        apption.co
+</a>
+<style>
+  .apption-label {
+    color: rgba(159, 166, 178, 1);
+    text-decoration: none;
+    font-size: 0.5rem;
+  }
+
+  .apption-label:hover {
+    color: #5850ec;
+    text-decoration: underline;
+  }
+</style></div>
+  <div class="cleanslate w24tz-current-time w24tz-middle" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><p><a href="//24timezones.com/fuso-horario/brt" style="text-decoration: none" class="clock24" id="tz24-1675160395-tzbrt-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIxIiwic2hvd3NlY29uZHMiOiIxIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2M2Q4ZWI0YjhkZDIwIiwidHlwZSI6ImRiIiwibGFuZyI6InB0In0=" title="BRT fuso horário" target="_blank">Brasil</a></p><div id="clock_block_cb63d8eb4b8dd20"></div></div>
+<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+</div>
+
+
+  <script type="text/javascript" charset="utf-8">
+    function inIframe () {
+      try {
+        return window.self !== window.top;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    var embedContainer = document.getElementById("embedContainer");
+    var embedURL = 'https://apption.co/embeds/84166d76';
+
+    if (inIframe()) {
+      // It's ok
+    } else {
+      embedContainer.innerHTML = `<div>
+<a style="text-decoration: none; color: black; font-weight: bold;" href="https://apption.co" target="_blank">🖼️️
+        Apption.co</a>
+<p>${'paste the url into your Notion page&#39;s /embed block.'}</p>
+<p><span style="font-weight: bold;">${embedURL}</span></p>
+</div>`
+    }
+  </script>
+
+  <script type="text/javascript" charset="utf-8">
+    (function() {
+      function getInitialColorMode() {
+        const mql = window.matchMedia('(prefers-color-scheme: dark)');
+        const hasMediaQueryPreference = typeof mql.matches === 'boolean';
+        if (hasMediaQueryPreference) {
+          return mql.matches ? 'dark' : 'light';
+        }
+        return 'light';
+      }
+      if ('light' === 'default') {
+        if (getInitialColorMode() === 'light') {
+          document.body.style.background = "white";
+        } else {
+          document.body.style.background = "rgb(25, 25, 25)";
+        }
+      } else {
+        document.body.style.background = "white";
+      }
+    })()
+  </script>
+</body>
+</html>
